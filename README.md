@@ -67,6 +67,9 @@ When building the application, you can specify the target configuration using th
 
 The default build configuration is `prod`.
 
+Update angular to latest.
+`npm install --save-dev @angular/cli@latest`
+
 ## Development server
 
 Run `npm start` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change
@@ -150,3 +153,7 @@ Development, build and quality processes are based on [angular-cli](https://gith
 - User Roles
 - Admin Dashboard
 - Post's and Page's
+
+#### Changelog
+
+- mysql2 added to pack
