@@ -4,9 +4,12 @@
       <mat-icon>menu</mat-icon>
     </button>
     <span class="title">{{title}}</span>
-  </div>
+  </div> 
   <div fxHide.lt-md>
-    <a class="brand" href="https://github.com/ngx-rocket" translate>APP_NAME</a>
+    <button mat-button routerLink="/home" routerLinkActive="active" disabled>
+      <img class="logo" src="assets/logo/iwi-logo.png" alt="iwi-A7 logo" width="50"/>
+      <a class="brand"  routerLink="/home" title="APP_NAME" translate>APP_NAME</a>
+    </button>
     <button mat-button routerLink="/home" routerLinkActive="active">
       <mat-icon>home</mat-icon>
       <span translate>Home</span>
