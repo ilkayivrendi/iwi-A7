@@ -153,3 +153,7 @@ Development, build and quality processes are based on [angular-cli](https://gith
 - User Roles
 - Admin Dashboard
 - Post's and Page's
+
+#### Changelog
+
+- mysql2 added to pack
