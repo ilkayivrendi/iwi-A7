@@ -1,8 +1,13 @@
-.container {
+.drawer-container {
   height: 100%;
   border: 1px solid #555;
   text-align: center;
   padding: 50 10 10 0;
+
+  .content-container {
+    text-align: center;
+    padding: 1rem;
+  }
 }
 
 .mat-icon {
