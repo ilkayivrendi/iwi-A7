@@ -17,7 +17,7 @@ import { ShellModule } from './shell/shell.module';
 import { LoginModule } from './login/login.module';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { DashboardModule } from './admin/dashboard/dashboard.module';
+import { AdminModule } from './admin/admin.module';
 
 @NgModule({
   imports: [
@@ -33,7 +33,7 @@ import { DashboardModule } from './admin/dashboard/dashboard.module';
     ShellModule,
     HomeModule,
     LoginModule,
-    DashboardModule,
+    AdminModule,
     Angulartics2Module.forRoot([Angulartics2GoogleAnalytics]),
     AppRoutingModule
   ],

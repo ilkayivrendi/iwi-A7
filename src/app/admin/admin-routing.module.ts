@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { extract } from '@app/core';
-import { DashboardComponent } from './dashboard.component';
+import { extract, AuthenticationGuard } from '@app/core';
+import { AdminComponent } from './admin.component';
 
 const routes: Routes = [
   // Module is lazy loaded, see app-routing.module.ts
-  { path: '', component: DashboardComponent, data: { title: extract('Dashboard') } }
+  { path: '', component: AdminComponent, canActivate: [AuthenticationGuard], data: { title: extract('Admin') } }
 ];
 
 @NgModule({
@@ -14,4 +14,4 @@ const routes: Routes = [
   exports: [RouterModule],
   providers: []
 })
-export class DashboardRoutingModule {}
+export class AdminRoutingModule {}

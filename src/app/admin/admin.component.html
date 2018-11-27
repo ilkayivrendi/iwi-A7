@@ -1,0 +1,36 @@
+<mat-drawer-container class="drawer-container" [hasBackdrop]="hasBackdrop.value">
+  <mat-drawer #drawer [mode]="mode.value">
+    <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+    <mat-menu #menu="matMenu"> 
+      <button mat-menu-item>Item 1</button> 
+      <button mat-menu-item>Item 2</button> </mat-menu>
+    </mat-drawer>
+  <mat-drawer-content> <div class="content-container">
+      <mat-card>
+          <h1><mat-card-title translate>APP_NAME</mat-card-title></h1>
+          <mat-form-field>
+            <mat-label>Sidenav mode</mat-label>
+            <mat-select #mode value="side">
+              <mat-option value="side">Side</mat-option>
+              <mat-option value="over">Over</mat-option>
+              <mat-option value="push">Push</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Has backdrop</mat-label>
+            <mat-select #hasBackdrop>
+              <mat-option>Unset</mat-option>
+              <mat-option [value]="true">True</mat-option>
+              <mat-option [value]="false">False</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <button mat-raised-button (click)="drawer.toggle()">Toggle drawer</button>
+        
+          <mat-card-content>
+            <mat-icon>code</mat-icon>
+            <span translate>Version</span> {{ version }}
+          </mat-card-content>
+        </mat-card>
+  </div>
+</mat-drawer-content>
+</mat-drawer-container>
